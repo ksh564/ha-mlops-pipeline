@@ -33,7 +33,7 @@ on:
       user_namespace:
         description: 'Target user namespace (e.g., kubeflow-user01)'
         required: true
-        default: 'YOUR_NAMESPACE'
+        default: 'kubeflow-user02'
 
 env:
   AWS_REGION: ap-northeast-2
@@ -42,7 +42,7 @@ env:
   ECR_REGISTRY: '347880001135.dkr.ecr.ap-northeast-2.amazonaws.com'
   ECR_REPOSITORY: 'mlops-training/user02'
   EKS_CLUSTER_NAME: 'test-eks-cluster'
-  NAMESPACE: YOUR_NAMESPACE
+  NAMESPACE: 'kubeflow-user02'
 
 jobs:
   # ============================================================
